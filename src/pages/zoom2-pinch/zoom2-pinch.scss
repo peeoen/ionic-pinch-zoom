@@ -1,0 +1,17 @@
+page-zoom2-pinch {
+    // disable the overflow during the pinch event
+    ion-content.disable-scrolling .scroll-content {
+        overflow-y: hidden;
+    }
+    .doc {
+        width: 2048px;
+        // height: 3508px;
+    }
+
+    .scroll-content {
+        touch-action: pan-x pan-y !important;
+        * {
+            touch-action: pan-x pan-y !important;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+<!--
+  Generated template for the Zoom2PinchPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Zoom 2</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding [class.disable-scrolling]='isScaling' >
+  <!-- [style.transform]="'scale(' + zoomScale + ')' -->
+  <ion-scroll scrollX="true" scrollY="true" style="height: 90%;">
+      <div  class="doc" pinch (pinchstart)="onPinchStart($event)" (pinchend)="onPinchEnd($event)" (pinchmove)="onPinchMove($event)" [style.transform]="'scale(' + zoomScale + ')'">
+
+          <p *ngFor="let i of [0,1,2,3,4,5];">
+            <strong>Chapter {{ i + 1 }}: </strong>Suspendisse risus libero, pharetra quis facilisis a, dictum non tortor. Duis eu metus
+            bibendum, porta lectus convallis, iaculis est. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+            ridiculus mus. Praesent ac nibh non diam molestie pharetra ut sit amet nulla. Phasellus id ullamcorper arcu. Fusce
+            vehicula, magna vel feugiat tincidunt, sem orci dapibus mi, sit amet vestibulum lorem augue a erat. Vestibulum sed
+            scelerisque augue. Vestibulum porta sem ac rhoncus condimentum. Donec velit erat, ultrices vitae ullamcorper sit
+            amet, tempus sed purus. Donec sed sapien mauris. Sed velit lacus, lacinia eu nisi ut, posuere pulvinar urna. Integer
+            eget mi sollicitudin, imperdiet odio et, pretium massa. Aliquam sed tellus a neque bibendum tempus a sed dolor. Sed
+            justo metus, venenatis sit amet vestibulum fringilla, vestibulum eget lectus. Donec a nibh justo.</p>
+    
+        </div>
+  </ion-scroll>
+  <button ion-button (click)="zoomScale = 1">Refresh</button>
+  <ion-item>
+      <ion-input type="number" #scaleNum placeholder="Scale"></ion-input>
+    </ion-item>
+  <button ion-button (click)="zoomScale = scaleNum.value">changeScale</button>
+<!-- 
+  </zoom-area> -->
+</ion-content>

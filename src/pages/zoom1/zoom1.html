@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Zoom 1</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div pinch
+       (pinchstart)="onPinchStart($event)"
+       (pinchmove)="onPinchMove($event)"
+       (pinchend)="onPinchEnd($event)"
+       class="scale-wrapper">
+
+    <div *ngFor="let appointment of appointments"
+         [class.appointment]="appointment.hasAppointment"
+         class="scale-row">
+
+      <div #cell
+           class="scale-cell">
+
+        <div class="time">
+          {{ appointment.start | date:'HH:mm' }}
+        </div>
+
+        <div class="text">
+          {{ appointment.title }}
+
+          <div>
+            <small>
+              {{ appointment.details }}
+            </small>
+          </div>
+
+        </div>
+      </div>
+      <div *ngIf="appointment.hasAppointment"
+           class="read-more"></div>
+    </div>
+  </div>
+
+</ion-content>

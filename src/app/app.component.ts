@@ -1,10 +1,12 @@
 import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform } from 'ionic-angular';
-import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-
+import { StatusBar } from '@ionic-native/status-bar';
+import { Nav, Platform } from 'ionic-angular';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { ScalePage } from './../pages/scale/scale';
+import { Zoom1Page } from './../pages/zoom1/zoom1';
+import { Zoom2PinchPage } from './../pages/zoom2-pinch/zoom2-pinch';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -22,7 +24,9 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      { title: 'zoom1', component: Zoom1Page },
+      { title: 'zoom2', component: Zoom2PinchPage },
+      { title: 'scale', component: ScalePage },
     ];
 
   }
