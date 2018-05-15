@@ -8,32 +8,11 @@ import { ZoomAreaModule } from 'ionic2-zoom-area';
 import { HomePage } from '../pages/home/home';
 import { DirectivesModule } from './../directives/directives.module';
 import { ScalePage } from './../pages/scale/scale';
+import { SelectPage } from './../pages/select/select';
 import { Zoom1Page } from './../pages/zoom1/zoom1';
 import { Zoom2PinchPage } from './../pages/zoom2-pinch/zoom2-pinch';
 import { MyApp } from './app.component';
 
-// export class HammerConfigExt extends HammerGestureConfig {
-
-//   buildHammer(element: HTMLElement) {
-
-//     const mc = new (<any> window).Hammer(
-//       element, {
-//         // set the touchAction accordingly
-//         touchAction: "pan-y pan-x",
-//         domEvents: true
-//       }
-//     );
-
-//     // enable the pinch gesture
-//     mc.get('pinch').set({
-//       enable: true
-//     });
-
-//     return mc;
-
-//   }
-
-// }
 
 @NgModule({
   declarations: [
@@ -41,7 +20,8 @@ import { MyApp } from './app.component';
     HomePage,
     Zoom1Page,
     ScalePage,
-    Zoom2PinchPage
+    Zoom2PinchPage,
+    SelectPage
   ],
   imports: [
     BrowserModule,
@@ -56,16 +36,13 @@ import { MyApp } from './app.component';
     HomePage,
     Zoom1Page,
     ScalePage,
-    Zoom2PinchPage
+    Zoom2PinchPage,
+    SelectPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    // {
-    //   provide: HAMMER_GESTURE_CONFIG,
-    //   useClass: HammerConfigExt
-    // }
   ]
 })
 export class AppModule {}

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ModalController } from 'ionic-angular';
+import { SelectPage } from './../select/select';
 
 const MAX_SCALE = 2.5;
 const MIN_SCALE = 0.8;
@@ -10,7 +12,6 @@ const BASE_SCALE = 1;
   templateUrl: 'zoom2-pinch.html',
 })
 export class Zoom2PinchPage {
-  public fontSize = `${BASE_SCALE}rem`;
 
   private scale = BASE_SCALE;
   private alreadyScaled = BASE_SCALE;
@@ -18,7 +19,7 @@ export class Zoom2PinchPage {
   isScaling = false;
 
 
-  constructor() { }
+  constructor(public modalCtrl: ModalController) { }
 
   public onPinchStart(e) {
     // flag that sets the class to disable scrolling
@@ -61,16 +62,18 @@ export class Zoom2PinchPage {
     }
 
     let fontSize = Math.round(totalScaled * 10) / 10;
-
-    // // change the fontsize every 3 decimals in scale change
-    // if ((fontSize * 10) % 3 === 0) {
-
-    //   // update the fontsize
-    //   this.fontSize = `${fontSize}rem`;
-    // }
-
    this.zoomScale = totalScaled;
-   console.log('new', this.zoomScale);
+  }
+
+  presentModalSelectPage() {
+    let modal = this.modalCtrl.create(SelectPage);
+    modal.onDidDismiss(data => {
+      if (data) {
+        console.log(data);
+      }
+
+    });
+    modal.present();
   }
 
 

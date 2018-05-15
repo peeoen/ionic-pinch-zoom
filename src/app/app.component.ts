@@ -14,7 +14,7 @@ import { Zoom2PinchPage } from './../pages/zoom2-pinch/zoom2-pinch';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = Zoom2PinchPage;
 
   pages: Array<{title: string, component: any}>;
 
