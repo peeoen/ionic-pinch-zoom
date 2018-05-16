@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
  * Components.
  */
 @Component({
-  selector: 'checkbox',
+  selector: 'control-checkbox',
   templateUrl: 'checkbox.html'
 })
 export class CheckboxComponent {

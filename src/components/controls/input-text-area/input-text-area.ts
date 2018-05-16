@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
  * Components.
  */
 @Component({
-  selector: 'input-text-area',
+  selector: 'control-input-text-area',
   templateUrl: 'input-text-area.html'
 })
 export class InputTextAreaComponent {

@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
  * Components.
  */
 @Component({
-  selector: 'radio',
+  selector: 'control-radio',
   templateUrl: 'radio.html'
 })
 export class RadioComponent {
