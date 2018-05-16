@@ -1,0 +1,66 @@
+<ion-grid class="container">
+  <ion-row>
+    <ion-col col-12 class="tal-ct title">
+      The Shell Company of Thailand Ltd.
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-4>
+      <ion-row>
+        <ion-col col-4>
+          Vessel
+        </ion-col>
+        <ion-col col-8>
+          <ion-input class="input-code" type="text"></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-4>
+          Berth
+        </ion-col>
+        <ion-col col-8>
+          <ion-input class="input-code" type="text"></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-4>
+          Draft
+        </ion-col>
+        <ion-col col-8>
+          <ion-input class="input-code" type="text"></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-4>
+          Fwd
+        </ion-col>
+        <ion-col col-8>
+          <ion-input class="input-code" type="text"></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-4>
+          Aft
+        </ion-col>
+        <ion-col col-8>
+          <ion-input class="input-code" type="text"></ion-input>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-4>
+          Mean
+        </ion-col>
+        <ion-col col-8>
+          <ion-input class="input-code" type="text"></ion-input>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col col-7 offset-1>
+      <ion-row>
+          <ion-col *ngFor="let num of nums">
+              {{num}}
+            </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+</ion-grid>

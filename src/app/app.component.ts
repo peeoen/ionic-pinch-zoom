@@ -3,7 +3,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { Nav, Platform } from 'ionic-angular';
 import { HomePage } from '../pages/home/home';
-import { ScalePage } from './../pages/scale/scale';
+import { TerminalPage } from './../pages/terminal/terminal';
 import { Zoom1Page } from './../pages/zoom1/zoom1';
 import { Zoom2PinchPage } from './../pages/zoom2-pinch/zoom2-pinch';
 
@@ -14,7 +14,7 @@ import { Zoom2PinchPage } from './../pages/zoom2-pinch/zoom2-pinch';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = Zoom2PinchPage;
+  rootPage: any = TerminalPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -26,7 +26,7 @@ export class MyApp {
       { title: 'Home', component: HomePage },
       { title: 'zoom1', component: Zoom1Page },
       { title: 'zoom2', component: Zoom2PinchPage },
-      { title: 'scale', component: ScalePage },
+      { title: 'terminal', component: TerminalPage },
     ];
 
   }

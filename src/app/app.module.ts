@@ -6,9 +6,10 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { ZoomAreaModule } from 'ionic2-zoom-area';
 import { HomePage } from '../pages/home/home';
+import { ComponentsModule } from './../components/components.module';
 import { DirectivesModule } from './../directives/directives.module';
-import { ScalePage } from './../pages/scale/scale';
 import { SelectPage } from './../pages/select/select';
+import { TerminalPage } from './../pages/terminal/terminal';
 import { Zoom1Page } from './../pages/zoom1/zoom1';
 import { Zoom2PinchPage } from './../pages/zoom2-pinch/zoom2-pinch';
 import { MyApp } from './app.component';
@@ -19,14 +20,15 @@ import { MyApp } from './app.component';
     MyApp,
     HomePage,
     Zoom1Page,
-    ScalePage,
     Zoom2PinchPage,
-    SelectPage
+    SelectPage,
+    TerminalPage
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     ZoomAreaModule.forRoot(),
+    ComponentsModule,
     IonicModule.forRoot(MyApp),
     DirectivesModule
   ],
@@ -35,9 +37,9 @@ import { MyApp } from './app.component';
     MyApp,
     HomePage,
     Zoom1Page,
-    ScalePage,
     Zoom2PinchPage,
-    SelectPage
+    SelectPage,
+    TerminalPage
   ],
   providers: [
     StatusBar,

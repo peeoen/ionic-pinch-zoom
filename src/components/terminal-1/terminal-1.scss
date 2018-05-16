@@ -1,0 +1,40 @@
+terminal-1 {
+    ion-col {
+        border: 1px solid black;
+        text-align: center;
+    }
+    
+    .tal-ct { 
+        text-align: center;
+    }
+    
+    .title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .header {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .container {
+        background-color: white;
+        width: 95%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .tal-l {
+        text-align: left;
+    }
+    
+    .caption {
+        font-weight: bold;
+    }
+    
+    
+}
+

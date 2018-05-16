@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>terminal-form</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="content" padding>
+    <div class="page">
+        <terminal-1></terminal-1>
+      </div>
+</ion-content>
+
+
+<ion-footer>
+    <ion-toolbar>
+      <div id="container">
+        <div id="left">
+          <button ion-button color="light">
+            <ion-icon name="arrow-back"  class="btn-change-page"></ion-icon>
+            Back
+          </button>
+        </div>
+        <div id="right">
+          <button ion-button color="light" >
+            Right
+            <ion-icon name="arrow-forward" class="btn-change-page"></ion-icon>
+          </button>
+        </div>
+        <div id="center">
+            <button ion-button color="secondary" (click)="presentModalSelectPage()">1</button>
+        </div>
+      </div>
+    </ion-toolbar>
+  </ion-footer>
