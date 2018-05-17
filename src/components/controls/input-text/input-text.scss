@@ -1,3 +1,44 @@
-input-text {
+control-input-text {
+    .border-patch {
+        color: red;
+    }
+    .text-input-md {
+        margin: 0px;
+    }
+    ion-label[fixed] {
+        width: 160px !important;
+        min-width: 150px !important;
+        max-width: 300px !important;
+    }
+    .item-md.item-input.input-has-focus .item-inner {
+        // border-bottom-color: transparent !important;
+        box-shadow: none !important;
+    }
 
+    ion-input {
+        border-bottom: 1px solid #dedede;
+        border-bottom-style: dotted;
+        border-width: 3px;
+    }
+
+    .item-md.item-block .item-inner {
+        border-bottom: none;
+
+    }
+
+    .item-md {
+        padding-left: 0px;
+    }
+
+    .focus-outline :focus{
+        outline: none !important;
+    } 
+
+    .text-input-md {
+        width: 100%;
+    }
+
+    .item-md.item-block .item-inner{
+        padding-right: 0px !important;
+    }
 }

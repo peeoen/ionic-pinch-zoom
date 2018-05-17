@@ -1,4 +1,4 @@
-<!-- Generated template for the InputTextComponent component -->
-<div>
-  {{text}}
-</div>
+<ion-item [ngStyle]="{'min-height':minHeight}">
+  <ion-label *ngIf="label" color="primary" fixed class="fixed-label" color="dark">{{label}}</ion-label>
+  <ion-input [type]="type"></ion-input>
+</ion-item>

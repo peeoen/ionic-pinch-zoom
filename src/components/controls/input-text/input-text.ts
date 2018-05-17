@@ -1,22 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 
-/**
- * Generated class for the InputTextComponent component.
- *
- * See https://angular.io/api/core/Component for more info on Angular
- * Components.
- */
 @Component({
   selector: 'control-input-text',
-  templateUrl: 'input-text.html'
+  templateUrl: 'input-text.html',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class InputTextComponent {
 
-  text: string;
-
+  @Input() type = 'text';
+  @Input() borderPath = true;
+  @Input() label = '';
+  @Input() minHeight = '4.4rem';
+  
   constructor() {
-    console.log('Hello InputTextComponent Component');
-    this.text = 'Hello World';
+
   }
 
 }

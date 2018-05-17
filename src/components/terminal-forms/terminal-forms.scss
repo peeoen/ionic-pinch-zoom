@@ -1,9 +1,13 @@
 terminal-forms {
-    .page {
+    .pages {
         margin-bottom: 20px;
-        width: 1400px;
-        background-color: white;
+        width: 1200px;
+
         margin: 0 auto;
     }
-  
+
+    .page {
+        background-color: white;
+        margin-top: 20px;
+    }
 }

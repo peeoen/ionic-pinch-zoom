@@ -5,17 +5,12 @@ import { InputTextAreaComponent } from './controls/input-text-area/input-text-ar
 import { InputTextComponent } from './controls/input-text/input-text';
 import { LabelComponent } from './controls/label/label';
 import { RadioComponent } from './controls/radio/radio';
-import { Terminal_1Component } from './terminal-1/terminal-1';
-import { Terminal_2Component } from './terminal-2/terminal-2';
-import { Terminal_3Component } from './terminal-3/terminal-3';
 import { TerminalFormsComponent } from './terminal-forms/terminal-forms';
 import { TernimalPage1Component } from './terminal-forms/ternimal-page1/ternimal-page1';
+import { TernimalPage2Component } from './terminal-forms/ternimal-page2/ternimal-page2';
 
 
 const components = [
-	Terminal_1Component,
-	Terminal_2Component,
-	Terminal_3Component,
 	InputTextComponent,
     InputTextAreaComponent,
     RadioComponent,
@@ -27,14 +22,16 @@ const components = [
 @NgModule({
 	declarations: [
 		...components,
-    LabelComponent
+    LabelComponent,
+    TernimalPage2Component
 	],
 	imports: [
 		IonicModule
 	],
 	exports: [
 		...components,
-    LabelComponent
+    LabelComponent,
+    TernimalPage2Component
 	]
 })
 export class ComponentsModule {}

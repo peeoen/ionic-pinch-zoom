@@ -14,3 +14,19 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.bd-2 {
+    border: 2px solid black;
+}
+
+.bd-1 {
+    border: 1px solid black;
+}
+
+.pd-t-30 {
+    padding-top: 30px;
+}
+
+.pd-5 {
+    padding: 5px !important;
+}

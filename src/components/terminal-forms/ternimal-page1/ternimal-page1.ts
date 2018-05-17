@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 /**
  * Generated class for the TernimalPage1Component component.
@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
  */
 @Component({
   selector: 'ternimal-page1',
-  templateUrl: 'ternimal-page1.html'
+  templateUrl: 'ternimal-page1.html',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TernimalPage1Component {
 

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 
 /**
  * Generated class for the InputTextAreaComponent component.
@@ -8,15 +8,15 @@ import { Component } from '@angular/core';
  */
 @Component({
   selector: 'control-input-text-area',
-  templateUrl: 'input-text-area.html'
+  templateUrl: 'input-text-area.html',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class InputTextAreaComponent {
 
-  text: string;
-
+  @Input() borderPath = true;
+  @Input() rows = 1;
   constructor() {
-    console.log('Hello InputTextAreaComponent Component');
-    this.text = 'Hello World';
+
   }
 
 }
