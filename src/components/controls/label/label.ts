@@ -24,7 +24,6 @@ export class LabelComponent {
       'text-decoration': this.underline ? 'underline': 'none',
       'text-align': this.align
     };
-    console.log(styles);
     return styles;
   }
 

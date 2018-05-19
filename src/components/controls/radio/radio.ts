@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 /**
  * Generated class for the RadioComponent component.
@@ -12,11 +12,14 @@ import { Component } from '@angular/core';
 })
 export class RadioComponent {
 
-  text: string;
+  @Input() name: string;
+  @Input() value: any;
 
   constructor() {
-    console.log('Hello RadioComponent Component');
-    this.text = 'Hello World';
+
   }
 
+
+
 }
+

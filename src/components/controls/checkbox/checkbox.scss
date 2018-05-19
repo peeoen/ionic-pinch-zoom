@@ -1,3 +1,32 @@
-checkbox {
+control-checkbox {
+    .item.item-md .checkbox-md {
+      margin: 0px 20px 0px 4px;
 
+    }
+    .checkbox-md .checkbox-icon {
+        top: 0;
+        position: absolute;
+    }
+    .list-md {
+        margin: initial !important;
+    }
+    .label-md {
+        margin: 0px 8px 5px 10px !important;
+    }
+    .item-inner {
+        display: initial !important;
+    }
+    .item-cover {
+        position: relative !important;
+        display: none;
+    }
+    .item-block {
+        min-height: initial;
+    }
+
+    .list-md .item-block .item-inner {
+        border-bottom: initial;
+    }
+
+    
 }

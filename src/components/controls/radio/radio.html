@@ -1,4 +1,4 @@
-<!-- Generated template for the RadioComponent component -->
-<div>
-  {{text}}
-</div>
+<ion-item>
+  <ion-label *ngIf="name">{{name}}</ion-label>
+  <ion-radio [value]="value"></ion-radio>
+</ion-item>

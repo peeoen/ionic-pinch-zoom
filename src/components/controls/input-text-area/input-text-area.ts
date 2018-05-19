@@ -1,11 +1,5 @@
-import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
-/**
- * Generated class for the InputTextAreaComponent component.
- *
- * See https://angular.io/api/core/Component for more info on Angular
- * Components.
- */
 @Component({
   selector: 'control-input-text-area',
   templateUrl: 'input-text-area.html',

@@ -1,4 +1,6 @@
-<!-- Generated template for the CheckboxComponent component -->
-<div>
-  {{text}}
-</div>
+<ion-list>
+  <ion-item *ngFor="let d of data" [ngStyle]="{'width': inline ? 100/(data.length)+'%': '100%','float': inline ? 'left' : 'initial'}">
+    <ion-label>{{d.text}}</ion-label>
+    <ion-checkbox [(ngModel)]="d.value"></ion-checkbox>
+  </ion-item>
+</ion-list>

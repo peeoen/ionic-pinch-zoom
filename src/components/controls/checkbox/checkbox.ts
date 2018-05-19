@@ -1,22 +1,18 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { CheckboxModel } from './../../../app/models/checkbox';
 
-/**
- * Generated class for the CheckboxComponent component.
- *
- * See https://angular.io/api/core/Component for more info on Angular
- * Components.
- */
 @Component({
   selector: 'control-checkbox',
-  templateUrl: 'checkbox.html'
+  templateUrl: 'checkbox.html',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CheckboxComponent {
 
-  text: string;
+  @Input() data: CheckboxModel [] = [];
+  @Input() inline: boolean = false;
 
   constructor() {
-    console.log('Hello CheckboxComponent Component');
-    this.text = 'Hello World';
+    
   }
 
 }

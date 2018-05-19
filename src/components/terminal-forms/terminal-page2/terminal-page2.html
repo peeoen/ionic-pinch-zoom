@@ -286,67 +286,72 @@
   <!-- Non Standard Activities Table -->
   <ion-row>
     <ion-col col-12>
+      <!-- header -->
       <ion-row>
         <ion-col col-4 class="bd-1">
-            <control-label [text]="'Cargo details'" [align]="'left'" [fontSize]="'16px'" [fontWeight]="'bold'"></control-label>
+          <control-label [text]="'Cargo details'" [align]="'left'" [fontSize]="'16px'" [fontWeight]="'bold'"></control-label>
         </ion-col>
         <ion-col col-2 class="bd-1">
-            <control-label [text]="'Grade 1'" [align]="'center'" [fontSize]="'16px'" [fontWeight]="'bold'"></control-label>
+          <control-label [text]="'Grade 1'" [align]="'center'" [fontSize]="'16px'" [fontWeight]="'bold'"></control-label>
         </ion-col>
         <ion-col col-2 class="bd-1">
-            <control-label [text]="'Grade 2'" [align]="'center'" [fontSize]="'16px'" [fontWeight]="'bold'"></control-label>
+          <control-label [text]="'Grade 2'" [align]="'center'" [fontSize]="'16px'" [fontWeight]="'bold'"></control-label>
         </ion-col>
         <ion-col col-2 class="bd-1">
-            <control-label [text]="'Grade 3'" [align]="'center'" [fontSize]="'16px'" [fontWeight]="'bold'"></control-label>
+          <control-label [text]="'Grade 3'" [align]="'center'" [fontSize]="'16px'" [fontWeight]="'bold'"></control-label>
         </ion-col>
         <ion-col col-2 class="bd-1">
-            <control-label [text]="'Grade 4'" [align]="'center'" [fontSize]="'16px'" [fontWeight]="'bold'"></control-label>
+          <control-label [text]="'Grade 4'" [align]="'center'" [fontSize]="'16px'" [fontWeight]="'bold'"></control-label>
         </ion-col>
       </ion-row>
+      <!-- content -->
       <ion-row *ngFor="let c of cargo">
-          <ion-col col-4 class="bd-1">
-              <control-label [text]="c" [align]="'left'" [fontSize]="'16px'"></control-label>
-          </ion-col>
-          <ion-col col-2 class="bd-1">
-              <control-input-text [minHeight]="'initial'"></control-input-text>
-          </ion-col>
-          <ion-col col-2 class="bd-1">
-              <control-input-text [minHeight]="'initial'"></control-input-text>
-          </ion-col>
-          <ion-col col-2 class="bd-1">
-              <control-input-text [minHeight]="'initial'"></control-input-text>
-          </ion-col>
-          <ion-col col-2 class="bd-1">
-              <control-input-text [minHeight]="'initial'"></control-input-text>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-            <ion-col col-12 class="bd-1">
-                <control-input-text [minHeight]="'initial'"></control-input-text>
-            </ion-col>
-          </ion-row>
-          <ion-row class="bd-1">
-              <ion-col col-1>
-                  <control-label [text]="'For Ship : '" [align]="'left'" [fontSize]="'16px'" [fontWeight]="'bold'"></control-label>
-              </ion-col>
-              <ion-col col-5>
-                  <control-input-text [minHeight]="'initial'"></control-input-text>
-              </ion-col>
-              <ion-col col-1>
-                  <control-label [text]="'For Shore : '" [align]="'left'" [fontSize]="'16px'" [fontWeight]="'bold'"></control-label>
-              </ion-col>
-              <ion-col col-5>
-                  <control-input-text [minHeight]="'initial'"></control-input-text>
-              </ion-col>
-            </ion-row>
-            <ion-row class="bd-1">
-                <ion-col col-1>
-                    <control-label [text]="'Date/Time : '" [align]="'left'" [fontSize]="'16px'" [fontWeight]="'bold'"></control-label>
-                </ion-col>
-                <ion-col col-11>
-                    <control-input-text [minHeight]="'initial'"></control-input-text>
-                </ion-col>
-              </ion-row>
+        <ion-col col-4 class="bd-1">
+          <control-label [text]="c" [align]="'left'" [fontSize]="'16px'"></control-label>
+        </ion-col>
+        <ion-col col-2 class="bd-1">
+          <control-input-text [minHeight]="'initial'"></control-input-text>
+        </ion-col>
+        <ion-col col-2 class="bd-1">
+          <control-input-text [minHeight]="'initial'"></control-input-text>
+        </ion-col>
+        <ion-col col-2 class="bd-1">
+          <control-input-text [minHeight]="'initial'"></control-input-text>
+        </ion-col>
+        <ion-col col-2 class="bd-1">
+          <control-input-text [minHeight]="'initial'"></control-input-text>
+        </ion-col>
+      </ion-row>
+      <!-- for ship and for shore -->
+      <ion-row>
+        <ion-col col-12 class="bd-1">
+          <control-input-text [minHeight]="'initial'"></control-input-text>
+        </ion-col>
+      </ion-row>
+      <!-- blank line -->
+      <ion-row class="bd-1">
+        <ion-col col-1>
+          <control-label [text]="'For Ship : '" [align]="'left'" [fontSize]="'16px'" [fontWeight]="'bold'"></control-label>
+        </ion-col>
+        <ion-col col-5>
+          <control-input-text [minHeight]="'initial'"></control-input-text>
+        </ion-col>
+        <ion-col col-1>
+          <control-label [text]="'For Shore : '" [align]="'left'" [fontSize]="'16px'" [fontWeight]="'bold'"></control-label>
+        </ion-col>
+        <ion-col col-5>
+          <control-input-text [minHeight]="'initial'"></control-input-text>
+        </ion-col>
+      </ion-row>
+      <!-- datetime -->
+      <ion-row class="bd-1">
+        <ion-col col-1>
+          <control-label [text]="'Date/Time : '" [align]="'left'" [fontSize]="'16px'" [fontWeight]="'bold'"></control-label>
+        </ion-col>
+        <ion-col col-11>
+          <control-input-text [minHeight]="'initial'"></control-input-text>
+        </ion-col>
+      </ion-row>
     </ion-col>
   </ion-row>
 </ion-grid>

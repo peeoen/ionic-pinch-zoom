@@ -1,5 +1,5 @@
 import { ErrorHandler, NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -32,6 +32,7 @@ import { MyApp } from './app.component';
     ZoomAreaModule.forRoot(),
     ComponentsModule,
     IonicModule.forRoot(MyApp),
+    ReactiveFormsModule,
     DirectivesModule
   ],
   bootstrap: [IonicApp],

@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'ternimal-page2',
-  templateUrl: 'ternimal-page2.html',
+  selector: 'terminal-page2',
+  templateUrl: 'terminal-page2.html',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TernimalPage2Component {

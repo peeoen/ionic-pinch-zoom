@@ -1,0 +1,116 @@
+<ion-grid class="container">
+  <!-- company informations -->
+  <ion-row>
+    <ion-col col-12>
+      <control-label [text]="'The Shall Company of Thailand Ltd.'" [align]="'center'" [fontSize]="'16px'"></control-label>
+    </ion-col>
+    <ion-col col-12>
+      <control-label [text]="'SHIP/SHORE POLLUTION AVOIDANCE CHECKLIST'" [align]="'center'" [fontSize]="'17px'"></control-label>
+    </ion-col>
+    <ion-col col-12>
+      <control-label [text]="'It is the Masters responsibility at all times to ensure that every precaution is taken of prevent pollution.'"
+        [align]="'center'" [fontSize]="'16px'"></control-label>
+    </ion-col>
+    <ion-col col-12>
+      <control-label [text]="'The figures in Blod type refer to the appropriate section in the jetty regulations'" [align]="'center'"
+        [fontSize]="'16px'"></control-label>
+    </ion-col>
+  </ion-row>
+  <ion-row class="pd-t-30">
+    <ion-col col-4 class="bd-1 pd-10">
+      <control-input-text [minHeight]="'initial'"></control-input-text>
+    </ion-col>
+    <ion-col col-4 class="bd-1">
+      <ion-row>
+        <ion-col col-2 no-padding>
+          <control-label [text]="'Vessel'" [align]="'left'" [fontSize]="'16px'"></control-label>
+        </ion-col>
+        <ion-col col-10 no-padding>
+          <control-input-text [minHeight]="'initial'"></control-input-text>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col col-4 class="bd-1">
+      <ion-row>
+        <ion-col col-2 no-padding>
+          <control-label [text]="'Date'" [align]="'left'" [fontSize]="'16px'"></control-label>
+        </ion-col>
+        <ion-col col-10 no-padding>
+          <control-input-text [minHeight]="'initial'"></control-input-text>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-4 class="bd-1">
+      <control-input-text [minHeight]="'initial'"></control-input-text>
+    </ion-col>
+    <ion-col col-4 class="bd-1">
+      <ion-row>
+        <ion-col col-2 no-padding>
+          <control-label [text]="'Berth'" [align]="'left'" [fontSize]="'16px'"></control-label>
+        </ion-col>
+        <ion-col col-10 no-padding>
+          <control-input-text [minHeight]="'initial'"></control-input-text>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col col-4 class="bd-1">
+      <ion-row>
+        <ion-col col-2 no-padding>
+          <control-label [text]="'Time'" [align]="'left'" [fontSize]="'16px'"></control-label>
+        </ion-col>
+        <ion-col col-10 no-padding>
+          <control-input-text [minHeight]="'initial'"></control-input-text>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+  <ion-row class="pd-t-30">
+    <ion-col col-2 no-padding>
+      <control-label [text]="'Operation : '" [align]="'left'" [fontSize]="'16px'"></control-label>
+    </ion-col>
+    <ion-col col-10 no-padding>
+      <!-- <control-label [text]="'Operation : '" [align]="'left'" [fontSize]="'16px'"></control-label> -->
+      <control-checkbox [data]="operations" [inline]="true"></control-checkbox>
+    </ion-col>
+  </ion-row>
+  <ion-row class="pd-t-30">
+    <ion-col col-8 class="bd-1">
+
+    </ion-col>
+    <ion-col col-1 no-padding>
+      <ion-row>
+        <ion-col col-6 class="bd-1">
+          <control-label [text]="'Yes'" [align]="'center'" [fontSize]="'16px'" [fontWeight]="'bold'"></control-label>
+        </ion-col>
+        <ion-col col-6 class="bd-1">
+          <control-label [text]="'No'" [align]="'center'" [fontSize]="'16px'" [fontWeight]="'bold'"></control-label>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col col-3 class="bd-1">
+      <control-label [text]="'Remark'" [align]="'center'" [fontSize]="'16px'" [fontWeight]="'bold'"></control-label>
+    </ion-col>
+  </ion-row>
+  <ion-row *ngFor="let check of checkList" class="dp-flex">
+    <ion-col col-8 class="bd-1 flex-1">
+      <control-label [text]="check.text" [align]="'left'" [fontSize]="'16px'" [fontWeight]="'bold'"></control-label>
+    </ion-col>
+    <ion-col col-1 no-padding class="flex-1">
+      <ion-row class="h-100" radio-group>
+        <ion-col col-6 class="bd-1">
+          <control-radio [value]="'Yes'"></control-radio>
+        </ion-col>
+        <ion-col col-6 class="bd-1">
+          <control-radio [value]="'No'"></control-radio>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col col-3 class="flex-1 bd-1">
+      <!-- <control-input-text [minHeight]="'100%'"></control-input-text> -->
+      <!-- {{check.radio | json}} -->
+    </ion-col>
+
+  </ion-row>
+</ion-grid>
