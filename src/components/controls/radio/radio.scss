@@ -1,3 +1,11 @@
 control-radio {
+    .item-md {
+        padding-left: initial;
+    }
+
+    .item-md.item-block .item-inner {
+        border-bottom: initial;
+        padding-right: initial;
+    }
 
 }
