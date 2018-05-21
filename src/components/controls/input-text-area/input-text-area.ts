@@ -9,6 +9,7 @@ export class InputTextAreaComponent {
 
   @Input() borderPath = true;
   @Input() rows = 1;
+  
   constructor() {
 
   }

@@ -5,13 +5,8 @@ control-input-text {
     .text-input-md {
         margin: 0px;
     }
-    ion-label[fixed] {
-        width: 160px !important;
-        min-width: 150px !important;
-        max-width: 300px !important;
-    }
+
     .item-md.item-input.input-has-focus .item-inner {
-        // border-bottom-color: transparent !important;
         box-shadow: none !important;
     }
 
@@ -23,9 +18,9 @@ control-input-text {
 
     .item-md.item-block .item-inner {
         border-bottom: none;
-
     }
 
+    
     .item-md {
         padding-left: 0px;
     }
@@ -41,4 +36,19 @@ control-input-text {
     .item-md.item-block .item-inner{
         padding-right: 0px !important;
     }
+
+    ion-label {
+        margin: 0px;
+    }
+
+    .fixed-label{
+        // width: 160px !important;
+        min-width: 160px !important;
+        max-width: 160px !important;
+    }
+
+    .label-md {
+     margin: initial;
+    }
+
 }

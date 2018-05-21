@@ -1,9 +1,9 @@
-import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'control-input-text',
   templateUrl: 'input-text.html',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  // changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class InputTextComponent {
 
@@ -11,7 +11,7 @@ export class InputTextComponent {
   @Input() borderPath = true;
   @Input() label = '';
   @Input() minHeight = '4.4rem';
-  
+  @Input() widthLabel = '160px';
   constructor() {
 
   }

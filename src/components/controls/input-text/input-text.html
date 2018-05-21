@@ -1,4 +1,6 @@
 <ion-item [ngStyle]="{'min-height':minHeight}">
-  <ion-label *ngIf="label" color="primary" fixed class="fixed-label" color="dark">{{label}}</ion-label>
+  <ion-label *ngIf="label" color="primary"  color="dark"
+  [style.width]="widthLabel">{{label}}</ion-label>
   <ion-input [type]="type"></ion-input>
 </ion-item>
+<!-- [ngStyle]="{'min-width' : widthLabel + ' !important','max-width' : widthLabel + ' !important','width' : widthLabel + ' !important'}" -->
